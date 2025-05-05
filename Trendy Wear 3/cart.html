@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart - TrenyWear | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+	<div class="scrolling-banner" id="scrolling-banner">
+  <div class="scrolling-text">
+    🚚 Free Delivery &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; 
+    💰 Cash on Delivery Available &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; 
+    📞 24/7 Customer Support &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; 
+    🔄 Easy Returns &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+
+    🚚 Free Delivery &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; 
+    💰 Cash on Delivery Available &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; 
+    📞 24/7 Customer Support &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; 
+    🔄 Easy Returns &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+	  
+    🚚 Free Delivery &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; 
+    💰 Cash on Delivery Available &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; 
+    📞 24/7 Customer Support &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; 
+    🔄 Easy Returns &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+  </div>
+</div>
+
+       <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                  <a href="index.html"><img src="images/TOP LOGO.jpg" width="476" height="226"></a>
+              </div>
+              <nav>
+               <ul id="MenuItems">
+                   <li><a href="MAIN.html">Home</a></li>
+                   <li><a href="products.html">Products</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   <li><a href="account.html">Account</a></li>
+               </ul>
+              </nav>
+              <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+              <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+          </div>
+          
+       </div>
+       
+       
+<!--------------Cart Items details--------------->
+<div class="small-container cart-page">
+   
+   <table>
+       <tr>
+           <th>Product</th>
+           <th>Quantity</th>
+           <th>Subtotal</th>
+       </tr>
+
+       <tr>
+           <td>
+               <div class="cart-info">
+                   <img src="images/DSC02032.jpg">
+                   <div>
+                     <p>BASIC SHIFT DRESS</p>
+                       <small>Price: LKR 4500.00</small><br>
+                       <a href="">Remove</a>
+                   </div>
+               </div>
+           </td>
+           <td><input type="number" required="required" min="1" value="1"></td>
+           <td>LKR 4500.00</td>
+       </tr>
+       <tr>
+           <td>
+               <div class="cart-info">
+                   <img src="images/WebSizeArtboard48_041a6c65-0fa5-4bc3-9d0b-76cf6c7ba14a.jpg">
+                   <div>
+                     <p>BASIC FLOWY DRESS</p>
+                       <small>Price: LKR 4500.00</small><br>
+                       <a href="">Remove</a>
+                   </div>
+               </div>
+           </td>
+           <td><input type="number" required="required" min="1" value="1"></td>
+           <td>LKR 4500.00</td>
+       </tr>
+       <tr>
+           <td>
+               <div class="cart-info">
+                   <img src="images/DSC02116.jpg">
+                   <div>
+                     <p>HIGH-LOW HEM SHIFT DRESS</p>
+                       <small>Price: LKR 5500.00</small><br>
+                       <a href="">Remove</a>
+                   </div>
+               </div>
+           </td>
+           <td><input type="number" value="1"></td>
+           <td>LKR 5500.00</td>
+       </tr>
+   </table>
+    
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>LKR 14500.00</td>
+            </tr>
+            <tr>
+                <td>Shipping Cost</td>
+                <td>LKR 350.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>LKR 14850.00</td>
+            </tr>
+            
+        </table>
+    </div>
+    <div class="total-price">
+        <a href="#" class="btn">Proceed to checkout &#8594;</a>
+    </div>
+    
+</div>
+
+<!----------Footer---------------> 
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+               <h3>SECURE PAYMENT METHODS</h3>
+                <p>WE ACCEPT FOLLOWING PAYMENT METHODS.</p>
+                <div class="app-logo">
+                <img src="images/payhere_square_banner.png" width="155" height="134"></div>
+            </div>
+            <div class="footer-col2">
+               <img src="images/logo.png">
+                <p><strong>Trendy Wear – Where fashion meets individuality, and style defines you.</strong></p>
+</div>
+            <div class="footer-col3">
+               <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+               <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter<li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright"><a href="MAIN.html">© 2025 | Trendy Wear | All Rights Reserved.</a></p>
+    </div>
+    
+</div>
+</div>
+
+
+
+<!-------------js for toggle menu-------------->
+
+<script>
+    
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                MenuItems.style.maxHeight = "0px"
+            } 
+    }
+	let lastScrollTop = 0;
+const banner = document.getElementById("scrolling-banner");
+
+window.addEventListener("scroll", function() {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (currentScroll > lastScrollTop) {
+    // Scroll Down
+    banner.classList.add("hide-banner");
+  } else {
+    // Scroll Up
+    banner.classList.remove("hide-banner");
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+});
+    
+    
+</script>
+
+
+
+</body>
+</html>
+

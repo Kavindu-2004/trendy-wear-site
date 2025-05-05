@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account-trendy wear | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+
+<body>
+	<div class="scrolling-banner" id="scrolling-banner">
+  <div class="scrolling-text">
+    🚚 Free Delivery &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; 
+    💰 Cash on Delivery Available &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; 
+    📞 24/7 Customer Support &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; 
+    🔄 Easy Returns &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+
+    🚚 Free Delivery &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; 
+    💰 Cash on Delivery Available &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; 
+    📞 24/7 Customer Support &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; 
+    🔄 Easy Returns &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+	  
+    🚚 Free Delivery &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; 
+    💰 Cash on Delivery Available &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; 
+    📞 24/7 Customer Support &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; 
+    🔄 Easy Returns &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+  </div>
+</div>
+
+       <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                  <a href="MAIN.html"><img src="images/TOP LOGO.jpg" width="476" height="226"></a>
+              </div>
+              <nav>
+               <ul id="MenuItems">
+                   <li><a href="MAIN.html">Home</a></li>
+                   <li><a href="products.html">Products</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   <li><a href="account.html">Account</a></li>
+               </ul>
+              </nav>
+              <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+              <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+          </div>
+          
+          
+       </div>
+       
+       
+<!--------------Cart Items details--------------->
+<div class="accout-page">
+    <div class="container">
+  
+       <div class="row">
+         
+          <div class="col-2">
+             <img src="images/TR LOGIN PHOTO.jpg" width="1080">
+          </div>
+          
+           <div class="col-2">
+              <div class="form-container">
+                 <div class="form-btn">
+                     <span onclick="login()">Login</span>
+                     <span onclick="register()">Register</span>
+                     <hr id="indicator">
+                 </div>
+                 
+               <form id="LoginForm">
+                   <input type="text" placeholder="username">
+                   <input type="password" placeholder="Password">
+                   <button type="submit" class="btn">Login</button>
+                   <a href="">Forgot password</a>
+               </form>
+
+               <form id="RegForm">
+                   <input type="text" placeholder="username">
+                   <input type="email" placeholder="Email">
+                   <input type="password" placeholder="Password">
+                   <button type="submit" class="btn">Register</button>
+               </form>
+              </div>
+           </div>
+       </div>
+</div>
+</div>
+
+<!----------Footer---------------> 
+
+   <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>SECURE PAYMENT METHODS</h3>
+                    <p>WE ACCEPT FOLLOWING PAYMENT METHODS.</p>
+                    <div class="app-logo">
+                        <img src="images/payhere_square_banner.png" width="155" height="134">
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <img src="images/logo.png">
+                    <p><strong>Trendy Wear – Where fashion meets individuality, and style defines you.</strong></p>
+                </div>
+                <div class="footer-col3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-col4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"><a href="MAIN.html">© 2025 | Trendy Wear | All Rights Reserved.</a></p>
+        </div>
+
+    </div>
+
+<!-------------js for toggle menu-------------->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                MenuItems.style.maxHeight = "0px"
+            } 
+    }
+     
+</script>
+<!------------------- form toggle ----------->
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("indicator");
+        
+        function register(){
+                RegForm.style.transform = "translateX(0px)";
+                LoginForm.style.transform = "translateX(0px)";
+                Indicator.style.transform = "translateX(100px)"
+            };
+        function login(){
+                RegForm.style.transform = "translateX(300px)";
+                LoginForm.style.transform = "translateX(300px)";
+                Indicator.style.transform = "translateX(0px)"
+            }
+		let lastScrollTop = 0;
+const banner = document.getElementById("scrolling-banner");
+
+window.addEventListener("scroll", function() {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (currentScroll > lastScrollTop) {
+    // Scroll Down
+    banner.classList.add("hide-banner");
+  } else {
+    // Scroll Up
+    banner.classList.remove("hide-banner");
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+});
+            
+    </script>
+    
+    
+    
+</body>
+</html>
+
